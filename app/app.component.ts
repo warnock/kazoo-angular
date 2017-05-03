@@ -7,6 +7,7 @@ import { Animal } from './animal.model';
   <div class="container">
       <h1>Zoo Tracker</h1>
       <animal-list [childAnimalList]="masterAnimalList"></animal-list>
+      <new-animal (newAnimalSender)="addAnimal($event)"></new-animal>
   </div>
   `
 })
@@ -18,4 +19,7 @@ export class AppComponent {
     new Animal('Sloth', 'Ray', 3, 'plants', 'south America', 1, 'male', 'chilling', 'rap music' )
   ]
 
+  addAnimal(newAnimalFromChild: Animal) {
+    this.masterAnimalList.push(newAnimalFromChild);
+  }
 }
