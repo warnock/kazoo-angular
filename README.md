@@ -19,4 +19,4 @@
 * new-animal.component.ts <- add new animal
 * animal-list.component.ts <- list of animals
 * a animal.pipe.ts file
-* a animal.modal.ts file to hold animal class
+* a animal.model.ts file to hold animal class
