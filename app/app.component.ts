@@ -14,7 +14,7 @@ import { Animal } from './animal.model';
   </div>
 
   <div class="container">
-  
+
     <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)" ></animal-list>
 
     <div class="container">
@@ -59,8 +59,9 @@ import { Animal } from './animal.model';
 export class AppComponent {
 
   masterAnimalList: Animal[] = [
-    new Animal('Sloth', 'Bob', 3, 'plants', 'south America', 1, 'male', 'chilling', 'rap music', "https://pbs.twimg.com/profile_images/378800000612004541/173003f219ac28007433aab098136fa2.jpeg" ),
-    new Animal('Sloth', 'Ray', 1, 'plants', 'south America', 2, 'male', 'Slow walks on the beach', 'Bananas and being called cute', "http://kids.nationalgeographic.com/content/dam/kids/photos/animals/Mammals/Q-Z/sloth-beach-upside-down.jpg.adapt.945.1.jpg" )
+    new Animal('Sloth', 'Bob', 2, 'plants', 'south America', 1, 'male', 'chilling', 'rap music', "https://pbs.twimg.com/profile_images/378800000612004541/173003f219ac28007433aab098136fa2.jpeg" ),
+    new Animal('Galapagos Tortoise ', 'Frank', 50, 'plants', 'south America', 2, 'male', 'glaring with his old man stair', 'people calling him a turtle', "http://www.wildlifeworldwide.com/images/discover/latin-america_galapagos_giant-tortoise_square-300.jpg" ),
+    new Animal('Giraffe', 'Kazoo', 5, 'plants', 'Africa', 5, 'Female', 'neck rubs', 'the color blue', "https://s-media-cache-ak0.pinimg.com/736x/7c/0b/11/7c0b11a85f656b08f950c0fff3038067.jpg" )
   ]
   selectedAnimal = null;
 

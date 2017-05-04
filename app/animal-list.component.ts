@@ -17,15 +17,15 @@ import { Animal } from './animal.model';
       <img class="img-responsive" src={{currentAnimal.image}} alt="animal image">
       <h4>Name: {{currentAnimal.name}}</h4>
       <hr>
-      <p><strong>Species:</strong> {{currentAnimal.species}}</p>
-      <p><strong>Current Age:</strong> {{currentAnimal.age}}</p>
-      <p><strong>Diet:</strong> {{currentAnimal.diet}}</p>
-      <p><strong>Located:</strong> {{currentAnimal.location}}</p>
-      <p><strong>Caretakers Needed:</strong> {{currentAnimal.caretaker}}</p>
-      <p><strong>Animals Sex:</strong> {{currentAnimal.sex}}</p>
-      <p><strong>Likes:</strong> {{currentAnimal.like}}</p>
-      <p><strong>Dislikes:</strong> {{currentAnimal.dislike}}</p>
-      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModalTwo" (click)="editButtonHasbeenClicked(currentAnimal)">Edit</button>
+      <p><span class="bio">Species:</span> {{currentAnimal.species}}</p>
+      <p><span class="bio">Current Age:</span> {{currentAnimal.age}}</p>
+      <p><span class="bio">Diet:</span> {{currentAnimal.diet}}</p>
+      <p><span class="bio">Located:</span> {{currentAnimal.location}}</p>
+      <p><span class="bio">Caretakers Needed:</span> {{currentAnimal.caretaker}}</p>
+      <p><span class="bio">Animals Sex:</span> {{currentAnimal.sex}}</p>
+      <p><span class="bio">Likes:</span> {{currentAnimal.like}}</p>
+      <p><span class="bio">Dislikes:</span> {{currentAnimal.dislike}}</p>
+      <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#myModalTwo" (click)="editButtonHasbeenClicked(currentAnimal)">Edit</button>
       </div>
     </div>
   </div>

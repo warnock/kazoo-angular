@@ -1,14 +1,16 @@
 .animalCard {
   height: 600px;
-  border: 1px solid #333;
+  border: 5px solid #eee;
   padding: 10px;
-  box-shadow: 10px 10px 20px lightgrey;
+  box-shadow: 10px 10px 20px #333;
   background-color: #0062a1;
   color: white;
 }
 
 .animalCard h4 {
   text-align: center;
+  color: #eee;
+  font-size: 30px;
 }
 
 .animalCard img {
@@ -16,11 +18,17 @@
   width: 200px;
   height: 200px;
   margin: 10px auto;
+  border: solid 5px white;
 }
 
 .animalCard p {
   margin: 0;
   font-size: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+span.bio {
+  text-decoration: underline;
 }
 
 .animalCard hr {
@@ -30,6 +38,8 @@
 .animalCard button {
   position: absolute;
   bottom: 10px;
+  background-color: #e97d23;
+  border: solid 3px #eee;
 }
 
 .col-md-4 {
@@ -43,19 +53,23 @@
   font-size: 40px;
   color: white;
   border-radius: 0;
+  border: solid 5px #eee;
 }
 
 .new-animal button:hover {
   background-color: #aeca37;
+  border: solid 5px white;
 }
 
 .new-animal button:focus{
   background-color: #ce1d25;
   color: white;
+  border: solid 5px white;
 }
 
 .new-animal button:active {
   background-color: #ce1d25;
+  border: solid 5px white;
 }
 
 .jumbotron {
@@ -71,7 +85,7 @@
 .jumbotron h1 {
   font-family: 'Sigmar One', cursive;
   font-size: 106px;
-  /*text-shadow: 2px 11px 11px #333;*/
+  color: #eee;
   color: white;
   position: absolute;
   top: 300px;
@@ -79,7 +93,7 @@
 }
 
 body {
-  /*background-color: #019faa;*/
+  background-color: #818286;
 }
 
 select {
