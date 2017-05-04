@@ -20,3 +20,10 @@
 * animal-list.component.ts <- list of animals
 * a animal.pipe.ts file
 * a animal.model.ts file to hold animal class
+
+
+## Functionality to implement in the future
+* a place for caretaker information such as name
+* a place to log ongoing notes about the animal and it's health
+* directions on each animals individual care for getting new caretakers up to speed
+* a featured animal of the week to celebrate well trained/behaved animals
