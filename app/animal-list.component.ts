@@ -5,7 +5,7 @@ import { Animal } from './animal.model';
   selector: 'animal-list',
   template: `
   <ul>
-    <li *ngFor="let currentAnimal of childAnimalList"> Name: {{currentAnimal.name}}, Age: {{currentAnimal.age}}, Caretaker(s) {{currentAnimal.caretaker}}  <button class="btn btn-default" (click)="editButtonHasbeenClicked(currentAnimal)">Edit Animal</button>
+    <li *ngFor="let currentAnimal of childAnimalList"> Name: {{currentAnimal.name}}, Age: {{currentAnimal.age}}, Caretaker(s) {{currentAnimal.caretaker}}  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModalTwo" (click)="editButtonHasbeenClicked(currentAnimal)">Edit</button>
     </li>
   </ul>
 

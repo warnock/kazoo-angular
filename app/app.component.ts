@@ -7,7 +7,7 @@ import { Animal } from './animal.model';
   <div class="container">
       <h1>Zoo Tracker</h1>
       <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)" ></animal-list>
-      <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+
 
 
       <div class="container">
@@ -29,6 +29,25 @@ import { Animal } from './animal.model';
          </div>
        </div>
      </div>
+
+     <div class="container">
+     <!-- Modal 2 -->
+     <div class="modal fade" id="myModalTwo" role="dialog">
+       <div class="modal-dialog">
+         <!-- Modal content-->
+         <div class="modal-content">
+           <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal">&times;</button>
+             <h4 class="modal-title">Edit Animal</h4>
+           </div>
+           <div class="modal-body">
+               <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
+           </div>
+         </div>
+       </div>
+     </div>
+     </div>
+
   </div>
   `
 })

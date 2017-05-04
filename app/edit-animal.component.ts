@@ -5,21 +5,22 @@ import { Animal } from './animal.model';
   selector: 'edit-animal',
   template: `
     <div *ngIf="childSelectedAnimal">
-    <h3>Edit Animal</h3>
     <div>
       <label>Edit Name:</label>
-      <input  [(ngModel)]="childSelectedAnimal.name">
+      <input class="form-control" [(ngModel)]="childSelectedAnimal.name">
     </div>
     <div>
       <label>Edit Age:</label>
-      <input type="number" [(ngModel)]="childSelectedAnimal.age">
+      <input class="form-control" type="number" [(ngModel)]="childSelectedAnimal.age">
     </div>
     <div>
       <label>Edit Caretakers:</label>
-      <input type="number" [(ngModel)]="childSelectedAnimal.caretaker">
+      <input class="form-control" type="number" [(ngModel)]="childSelectedAnimal.caretaker">
     </div>
-    <button (click)="doneButtonClicked()">Done</button>
-   <div>
+    <div class="modal-footer">
+      <button data-toggle="modal" data-target="#myModalTwo" class="btn btn-default" (click)="doneButtonClicked()">Done</button>
+    </div>
+   </div>
   `
 })
 

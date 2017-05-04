@@ -44,7 +44,7 @@ import { Animal } from './animal.model';
     <input class="form-control" #animalDislike>
   </div>
    <div class="modal-footer">
-  <button class="btn btn-default" data-dismiss="modal" (click)="submitForm(animalSpecies.value, animalName.value, animalAge.value, animalDiet.value, animalLocation.value, animalCaretaker.value, sexOfAnimal.value, animalLike.value, animalDislike.value); animalSpecies.value=''; animalName.value=''; animalAge.value=''; animalDiet.value=''; animalLocation.value=''; animalCaretaker.value=''; sexOfAnimal.value=''; animalLike.value=''; animalDislike.value='';">Add</button>
+    <button class="btn btn-default" data-dismiss="modal" (click)="submitForm(animalSpecies.value, animalName.value, animalAge.value, animalDiet.value, animalLocation.value, animalCaretaker.value, sexOfAnimal.value, animalLike.value, animalDislike.value); animalSpecies.value=''; animalName.value=''; animalAge.value=''; animalDiet.value=''; animalLocation.value=''; animalCaretaker.value=''; sexOfAnimal.value=''; animalLike.value=''; animalDislike.value='';">Add</button>
    </div>
   `
 
