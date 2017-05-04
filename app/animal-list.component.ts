@@ -5,7 +5,8 @@ import { Animal } from './animal.model';
   selector: 'animal-list',
   template: `
   <div class="row">
-    <div class="animalCard col-md-3" *ngFor="let currentAnimal of childAnimalList">
+    <div class="col-md-3" *ngFor="let currentAnimal of childAnimalList">
+      <div class="animalCard">
       <img class="img-responsive" src={{currentAnimal.image}} alt="animalImg">
       <h4>Name: {{currentAnimal.name}}</h4>
       <hr>
@@ -18,6 +19,7 @@ import { Animal } from './animal.model';
       <p><strong>Likes:</strong> {{currentAnimal.like}}</p>
       <p><strong>Dislikes:</strong> {{currentAnimal.dislike}}</p>
       <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModalTwo" (click)="editButtonHasbeenClicked(currentAnimal)">Edit</button>
+      </div>
     </div>
   </div>
 
