@@ -27,3 +27,4 @@
 * a place to log ongoing notes about the animal and it's health
 * directions on each animals individual care for getting new caretakers up to speed
 * a featured animal of the week to celebrate well trained/behaved animals
+* sort by animal types, location withing the park, or animals assigned to particular caretakers

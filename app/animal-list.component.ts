@@ -4,7 +4,6 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'animal-list',
   template: `
-<hr>
   <div class="selectMenu">
     <select (change)="onChange($event.target.value)">
       <option value="all">All Animals</option>
@@ -12,9 +11,8 @@ import { Animal } from './animal.model';
       <option value="mature">Animals more than 2 years of age</option>
     </select>
   </div>
-<hr>
   <div class="row">
-    <div class="col-md-3" *ngFor="let currentAnimal of childAnimalList | animalAge:filteredByAnimalAge">
+    <div class="col-md-4" *ngFor="let currentAnimal of childAnimalList | animalAge:filteredByAnimalAge">
       <div class="animalCard">
       <img class="img-responsive" src={{currentAnimal.image}} alt="animal image">
       <h4>Name: {{currentAnimal.name}}</h4>

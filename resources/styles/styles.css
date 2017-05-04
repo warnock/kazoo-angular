@@ -1,7 +1,10 @@
 .animalCard {
-  height: 520px;
+  height: 600px;
   border: 1px solid #333;
   padding: 10px;
+  box-shadow: 10px 10px 20px lightgrey;
+  background-color: #0062a1;
+  color: white;
 }
 
 .animalCard h4 {
@@ -17,6 +20,7 @@
 
 .animalCard p {
   margin: 0;
+  font-size: 20px;
 }
 
 .animalCard hr {
@@ -28,10 +32,59 @@
   bottom: 10px;
 }
 
-.col-md-3 {
+.col-md-4 {
   margin-top: 25px;
 }
 
 .new-animal button {
   width: 100%;
+  background-color: #ce1d25;
+  font-family: 'Barrio', cursive;
+  font-size: 40px;
+  color: white;
+  border-radius: 0;
+}
+
+.new-animal button:hover {
+  background-color: #aeca37;
+}
+
+.new-animal button:focus{
+  background-color: #ce1d25;
+  color: white;
+}
+
+.new-animal button:active {
+  background-color: #ce1d25;
+}
+
+.jumbotron {
+  background-image: url('../../img/headerImg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 450px;
+  background-color: #502c86;
+  background-position: center;
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-family: 'Sigmar One', cursive;
+  font-size: 106px;
+  /*text-shadow: 2px 11px 11px #333;*/
+  color: white;
+  position: absolute;
+  top: 300px;
+  left: 50px;
+}
+
+body {
+  /*background-color: #019faa;*/
+}
+
+select {
+  font-size: 25px;
+  background-color: #aeca37;
+  color: white;
+  margin-top: 20px;
 }
