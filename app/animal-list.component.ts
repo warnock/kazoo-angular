@@ -4,10 +4,22 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'animal-list',
   template: `
-  <ul>
-    <li *ngFor="let currentAnimal of childAnimalList"> Name: {{currentAnimal.name}}, Age: {{currentAnimal.age}}, Caretaker(s) {{currentAnimal.caretaker}}  <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModalTwo" (click)="editButtonHasbeenClicked(currentAnimal)">Edit</button>
-    </li>
-  </ul>
+  <div class="row">
+    <div class="animalCard col-md-3" *ngFor="let currentAnimal of childAnimalList">
+      <img class="img-responsive" src={{currentAnimal.image}} alt="animalImg">
+      <h4>Name: {{currentAnimal.name}}</h4>
+      <hr>
+      <p><strong>Species:</strong> {{currentAnimal.species}}</p>
+      <p><strong>Current Age:</strong> {{currentAnimal.age}}</p>
+      <p><strong>Diet:</strong> {{currentAnimal.diet}}</p>
+      <p><strong>Located:</strong> {{currentAnimal.location}}</p>
+      <p><strong>Caretakers Needed:</strong> {{currentAnimal.caretaker}}</p>
+      <p><strong>Animals Sex:</strong> {{currentAnimal.sex}}</p>
+      <p><strong>Likes:</strong> {{currentAnimal.like}}</p>
+      <p><strong>Dislikes:</strong> {{currentAnimal.dislike}}</p>
+      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModalTwo" (click)="editButtonHasbeenClicked(currentAnimal)">Edit</button>
+    </div>
+  </div>
 
   `
 })

@@ -1,0 +1,29 @@
+.animalCard {
+  height: 500px;
+  border: 1px solid #333;
+  margin: 10px;
+}
+
+.animalCard h4 {
+  text-align: center;
+}
+
+.animalCard img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+.animalCard p {
+  margin: 0;
+}
+
+.animalCard hr {
+  margin: 0px;
+}
+
+.animalCard button {
+  position: absolute;
+  bottom: 10px;
+}

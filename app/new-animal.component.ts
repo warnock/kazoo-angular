@@ -43,8 +43,12 @@ import { Animal } from './animal.model';
     <label>The Animal dislikes:</label>
     <input class="form-control" #animalDislike>
   </div>
+  <div>
+    <label>Animal Image URL:</label>
+    <input class="form-control" #animalImage>
+  </div>
    <div class="modal-footer">
-    <button class="btn btn-default" data-dismiss="modal" (click)="submitForm(animalSpecies.value, animalName.value, animalAge.value, animalDiet.value, animalLocation.value, animalCaretaker.value, sexOfAnimal.value, animalLike.value, animalDislike.value); animalSpecies.value=''; animalName.value=''; animalAge.value=''; animalDiet.value=''; animalLocation.value=''; animalCaretaker.value=''; sexOfAnimal.value=''; animalLike.value=''; animalDislike.value='';">Add</button>
+    <button class="btn btn-default" data-dismiss="modal" (click)="submitForm(animalSpecies.value, animalName.value, animalAge.value, animalDiet.value, animalLocation.value, animalCaretaker.value, sexOfAnimal.value, animalLike.value, animalDislike.value, animalImage.value); animalSpecies.value=''; animalName.value=''; animalAge.value=''; animalDiet.value=''; animalLocation.value=''; animalCaretaker.value=''; sexOfAnimal.value=''; animalLike.value=''; animalDislike.value=''; animalImage.value='';">Add</button>
    </div>
   `
 
@@ -53,8 +57,8 @@ import { Animal } from './animal.model';
 export class NewAnimalComponent {
   @Output() newAnimalSender = new EventEmitter();
 
-  submitForm(species: string, name: string, age: number, diet: string, location: string, caretaker: number, sex: string, like: string, dislike: string) {
-    var newAnimalToAdd: Animal = new Animal(species, name, age, diet, location, caretaker, sex, like, dislike);
+  submitForm(species: string, name: string, age: number, diet: string, location: string, caretaker: number, sex: string, like: string, dislike: string, image: string) {
+    var newAnimalToAdd: Animal = new Animal(species, name, age, diet, location, caretaker, sex, like, dislike, image);
     this.newAnimalSender.emit(newAnimalToAdd);
   }
 }
