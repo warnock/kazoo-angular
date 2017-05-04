@@ -4,7 +4,6 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'new-animal',
   template: `
-  <h1>Add New Animal</h1>
   <div>
     <label>Enter Animals Species:</label>
     <input class="form-control" #animalSpecies>
@@ -44,8 +43,11 @@ import { Animal } from './animal.model';
     <label>The Animal dislikes:</label>
     <input class="form-control" #animalDislike>
   </div>
-  <button (click)="submitForm(animalSpecies.value, animalName.value, animalAge.value, animalDiet.value, animalLocation.value, animalCaretaker.value, sexOfAnimal.value, animalLike.value, animalDislike.value); animalSpecies.value=''; animalName.value=''; animalAge.value=''; animalDiet.value=''; animalLocation.value=''; animalCaretaker.value=''; sexOfAnimal.value=''; animalLike.value=''; animalDislike.value='';">Add</button>
+   <div class="modal-footer">
+  <button class="btn btn-default" data-dismiss="modal" (click)="submitForm(animalSpecies.value, animalName.value, animalAge.value, animalDiet.value, animalLocation.value, animalCaretaker.value, sexOfAnimal.value, animalLike.value, animalDislike.value); animalSpecies.value=''; animalName.value=''; animalAge.value=''; animalDiet.value=''; animalLocation.value=''; animalCaretaker.value=''; sexOfAnimal.value=''; animalLike.value=''; animalDislike.value='';">Add</button>
+   </div>
   `
+
 })
 
 export class NewAnimalComponent {
