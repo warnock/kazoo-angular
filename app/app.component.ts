@@ -6,8 +6,8 @@ import { Animal } from './animal.model';
   template: `
   <div class="container">
       <h1>Zoo Tracker</h1>
-      <animal-list [childAnimalList]="masterAnimalList"></animal-list>
-
+      <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)" ></animal-list>
+      <edit-animal [childSelectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></edit-animal>
 
 
       <div class="container">
@@ -39,8 +39,17 @@ export class AppComponent {
     new Animal('Sloth', 'Bob', 3, 'plants', 'south America', 1, 'male', 'chilling', 'rap music' ),
     new Animal('Sloth', 'Ray', 3, 'plants', 'south America', 1, 'male', 'chilling', 'rap music' )
   ]
+  selectedAnimal = null;
 
   addAnimal(newAnimalFromChild: Animal) {
     this.masterAnimalList.push(newAnimalFromChild);
   }
+
+  editAnimal(selectedAnimalFromList) {
+    this.selectedAnimal = selectedAnimalFromList;
+  }
+
+  finishedEditing() {
+   this.selectedAnimal = null;
+ }
 }

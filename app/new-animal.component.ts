@@ -14,7 +14,7 @@ import { Animal } from './animal.model';
   </div>
   <div>
     <label>Enter Animals Age:</label>
-    <input class="form-control" #animalAge>
+    <input type="number" class="form-control" #animalAge>
   </div>
   <div>
     <label>Enter Animals Diet:</label>
@@ -26,7 +26,7 @@ import { Animal } from './animal.model';
   </div>
   <div>
     <label>How many caretakers the animal needs:</label>
-    <input class="form-control" #animalCaretaker>
+    <input type="number" class="form-control" #animalCaretaker>
   </div>
   <div>
   <label>Sex of Animal</label>
