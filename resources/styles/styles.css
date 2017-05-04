@@ -1,5 +1,5 @@
 .animalCard {
-  height: 500px;
+  height: 520px;
   border: 1px solid #333;
   padding: 10px;
 }
@@ -26,4 +26,12 @@
 .animalCard button {
   position: absolute;
   bottom: 10px;
+}
+
+.col-md-3 {
+  margin-top: 25px;
+}
+
+.new-animal button {
+  width: 100%;
 }
