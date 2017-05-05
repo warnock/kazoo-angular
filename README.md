@@ -1,30 +1,49 @@
-### Plan:
+## KaZoo
 
-## What I need/functionality:
-* an animal class with species, name, age, diet, zoo location, number of needed caretakers, sex, one like and one dislike properties
-* the ability to add new instances of the animal class
-* the ability to list all logged animals
-* a select menu to view all animals, young animals (two years or less), and old animals (two years or older)
-* an update button to edit an animals name, age, and caretakers
+#### By Megan Warnock 5/4/2017
 
+### Description
+This application tracks different species of animals for a zoo. A user can add and edit animal profiles. The user can also filter animals by a selection menu.
 
-## wants:
-* image property of the animal
-* totally badass design
+### Prerequisites
 
+You will need the following things properly installed on your computer.
 
-## Components/files I will need:
-* app.component.ts <- root Component
-* edit-animal.compnent.ts <- edit name, age, caretaker properties
-* new-animal.component.ts <- add new animal
-* animal-list.component.ts <- list of animals
-* a animal.pipe.ts file
-* a animal.model.ts file to hold animal class
+* [Git](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with NPM)
+* [Bower](https://bower.io/)
+
+### Installation
+
+In your terminal run these commands:
+* `git clone <https://github.com/warnock/kazoo-angular.git>`
+* `cd kazoo-angular`
+* `npm install`
+* `bower install`
+
+### Running / Development
+
+* `gulp serve`
+* Visit your app in the browser at [http://localhost:3000](http://localhost:300).
+
+### Building
+
+* `gulp build` (development)
+* `gulp build --environment production` (production)
+
+### Support or contact details
+
+Contact Megan at megandwarnock@gmail.com if any questions.
+
+### License
+
+Copyright (c) 2017 **_MIT License_**
+
 
 
 ## Functionality to implement in the future
-* a place for caretaker information such as name
-* a place to log ongoing notes about the animal and it's health
-* directions on each animals individual care for getting new caretakers up to speed
-* a featured animal of the week to celebrate well trained/behaved animals
-* sort by animal types, location withing the park, or animals assigned to particular caretakers
+* A place for caretaker information such as name
+* A place to log ongoing notes about the animal and it's health
+* Directions on each animals care for getting new caretakers up to speed
+* A featured animal of the week to celebrate well trained/behaved animals
+* Sort by animal types, location within the park, or animals assigned to particular caretakers
