@@ -3,7 +3,7 @@
 #### By Megan Warnock 5/4/2017
 
 ### Description
-This application tracks different species of animals for a zoo. A user can add and edit animal profiles. The user can also filter animals by a selection menu.
+This application tracks different animal species for a zoo. A user can add and edit animal profiles. The user can also filter animals by a selection menu.
 
 ### Prerequisites
 
