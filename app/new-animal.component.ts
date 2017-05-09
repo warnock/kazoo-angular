@@ -31,8 +31,8 @@ import { Animal } from './animal.model';
   <div>
   <label>Sex of Animal</label>
   <select class="form-control" #sexOfAnimal>
-     <option [value]="male"> male </option>
-     <option [value]="female"> female </option>
+     <option value="male"> male </option>
+     <option value="female"> female </option>
   </select>
   </div>
   <div>
